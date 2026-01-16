@@ -1,0 +1,225 @@
+:root {
+      --bg-dark: #0e0e0e;
+      --bg-card: #1a1a1a;
+      --text-main: #f2f2f2;
+      --accent: #e63946;
+      --accent-2: #9b5de5;
+      --muted: #999;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .menu a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 40px;
+      background:
+        radial-gradient(circle at top, rgba(230,57,70,0.25), transparent 60%),
+        radial-gradient(circle at bottom, rgba(155,93,229,0.25), transparent 60%);
+    }
+
+    .hero h1 {
+      font-family: 'Permanent Marker', cursive;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .hero .cta {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 14px 28px;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .hero .cta:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    section h2 {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--accent);
+    }
+
+    .text {
+      max-width: 800px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* EVENTS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      padding: 20px;
+      border-left: 4px solid var(--accent-2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card span {
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    /* MENU */
+    .menu-list h4 {
+      margin-bottom: 10px;
+      color: var(--accent-2);
+    }
+
+    .menu-list ul {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    .menu-list li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #333;
+      color: var(--muted);
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery div {
+      height: 200px;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* VIDEOS */
+    .videos iframe {
+      width: 100%;
+      height: 280px;
+      border: none;
+    }
+
+    /* LOCATION */
+    iframe.map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      filter: grayscale(1) invert(90%);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 1px solid #222;
+      color: var(--muted);
+    }
+
+    /* ANIMATION */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.6s;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
