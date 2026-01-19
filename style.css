@@ -1,3 +1,41 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('fonts/Coolvetica/CoolveticaRg-Regular.woff2') format('woff2'),
+       url('fonts/Coolvetica/CoolveticaRg-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('fonts/Coolvetica/CoolveticaRg-Italic.woff2') format('woff2'),
+       url('fonts/Coolvetica/CoolveticaRg-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('fonts/Questrial/Questrial-Regular.woff2') format('woff2'),
+       url('fonts/Questrial/Questrial-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('fonts/Helvetica-Now-Display-Bold-Ita/HelveticaNowDisplay-ExtraBold.woff2') format('woff2'),
+       url('fonts/Helvetica-Now-Display-Bold-Ita/HelveticaNowDisplay-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 :root {
       --bg-dark: #0e0e0e;
       --bg-card: #1a1a1a;
@@ -60,10 +98,18 @@
     }
 
     .logo {
-      font-family: 'Permanent Marker', cursive;
-      font-size: 1.5rem;
-      color: var(--accent);
-    }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Helvetica Now Display', sans-serif;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  height: 36px;
+  width: auto;
+}
+
 
     .menu {
       display: flex;
@@ -95,11 +141,10 @@
 
     .menu a {
       font-size: 0.9rem;
-      color: var(--muted);
     }
 
     .menu a:hover {
-      color: var(--accent);
+      color: var(--muted);
     }
 
     /* HERO */
@@ -116,7 +161,7 @@
     }
 
     .hero h1 {
-      font-family: 'Permanent Marker', cursive;
+      font-family: 'Helvetica Now Display', sans-serif;
       font-size: clamp(2.5rem, 6vw, 4rem);
       margin-bottom: 15px;
     }
@@ -151,7 +196,7 @@
     }
 
     section h2 {
-      font-family: 'Permanent Marker', cursive;
+      font-family: 'Helvetica Now Display', sans-serif;
       font-size: 2rem;
       margin-bottom: 30px;
       color: var(--accent);
