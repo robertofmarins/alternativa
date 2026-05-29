@@ -3,137 +3,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Alternativa Arte, Food & Bar - Um espaço cultural vivo em Campo Grande, Rio de Janeiro. Comida artesanal, drinks autorais, tecido acrobático, shows ao vivo e arte independente."/>
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Alternativa | Arte, Food & Bar"/>
+  <meta property="og:description" content="Um ponto de encontro para quem respira arte, música, performance e cultura urbana. Conheça nosso cardápio e agenda de eventos."/>
+  <meta property="og:type" content="website"/>
+  
   <link rel="stylesheet" href="style.css">
   <title>Alternativa | Arte, Food & Bar</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
   <nav>
-  <div class="logo">
-  <img src="images/logo.png" alt="Logo Alternativa">
-  <span>Alternativa</span>
-</div>
+    <div class="logo" id="logo-main">
+      <img src="images/logo.png" alt="Logo Alternativa">
+      <span>Alternativa</span>
+    </div>
 
-  <button class="menu-toggle" aria-label="Abrir menu">
-    ☰
-  </button>
+    <button class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir menu">
+      ☰
+    </button>
 
-  <div class="menu">
-    <a href="#sobre">Sobre</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#cardapio">Cardápio</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#local">Local</a>
-  </div>
-</nav>
+    <div class="menu" id="nav-menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#local">Local</a>
+    </div>
+  </nav>
 </header>
 
-<section class="hero">
-  <div>
+<section class="hero" id="hero-section">
+  <div class="hero-content">
     <h1>Alternativa</h1>
-    <p>
-      A alternativa certa para o seu dia a dia.  
-      Arte, food, bar, cultura independente e experiências que fogem do óbvio.
+    <p class="hero-tagline">Arte · Food · Bar · Cultura Independente</p>
+    <p class="hero-desc">
+      A alternativa certa para o seu dia a dia. Experiências que fogem do óbvio, intervenções artísticas e gastronomia autoral em um espaço único.
     </p>
-    <a class="cta" href="https://instagram.com/alternativaartee" target="_blank">
-      Instagram @alternativaartee
+    <a class="cta" href="https://instagram.com/alternativaartee" target="_blank" rel="noopener noreferrer" id="instagram-cta">
+      Conecte-se no Instagram
     </a>
   </div>
 </section>
 
 <section id="sobre" class="reveal">
-  <h2>Sobre</h2>
-  <p class="text">
-    A Alternativa é um espaço vivo. Um ponto de encontro para quem respira arte,
-    música, performance, expressão corporal e cultura urbana.  
-    Aqui acontecem eventos, encontros, apresentações e experiências que misturam
-    comida, bebida e criatividade.
-  </p>
+  <div class="container">
+    <h2>Sobre o Espaço</h2>
+    <p class="text">
+      A Alternativa é um espaço vivo. Um ponto de encontro para quem respira arte, música, performance, expressão corporal e cultura urbana. Acreditamos na força da expressão independente e na criação de conexões reais. 
+    </p>
+    <p class="text">
+      Aqui acontecem eventos, encontros, apresentações de circo aéreo e exposições de artistas locais, harmonizados com um cardápio de comidas artesanais e drinks autorais pensados para surpreender.
+    </p>
+  </div>
 </section>
 
 <section id="eventos" class="reveal">
-  <h2>Eventos</h2>
-  <div class="grid">
-    <div class="card">
-      <span>SEX · 20h</span>
-      <h3>Noite Experimental</h3>
-      <p>Jam musical, performances livres e arte ao vivo.</p>
-    </div>
-    <div class="card">
-      <span>SÁB · 18h</span>
-      <h3>Cultura Aérea</h3>
-      <p>Tecido acrobático, slackline e intervenções artísticas.</p>
-    </div>
-    <div class="card">
-      <span>DOM · 16h</span>
-      <h3>Arte & Convívio</h3>
-      <p>Exposição, música ambiente e boas conversas.</p>
+  <div class="container">
+    <h2>Próximos Eventos</h2>
+    <div class="grid">
+      <div class="card event-card">
+        <span class="event-date">SEX · 20h</span>
+        <h3>Noite Experimental</h3>
+        <p>Jam session musical com artistas locais, microfone aberto, performances livres e arte ao vivo nas paredes do espaço.</p>
+        <span class="badge badge-primary">Entrada Franca</span>
+      </div>
+      <div class="card event-card next-highlight">
+        <span class="event-date">SÁB · 18h</span>
+        <div class="highlight-tag">Mais Aguardado</div>
+        <h3>Cultura Aérea</h3>
+        <p>Apresentações intimistas de tecido acrobático, lira, slackline e intervenções artísticas de expressão corporal.</p>
+        <span class="badge badge-accent">Reserva Necessária</span>
+      </div>
+      <div class="card event-card">
+        <span class="event-date">DOM · 16h</span>
+        <h3>Arte & Convívio</h3>
+        <p>Exposição de artistas independentes da zona oeste, feira de zines, música ambiente em vinil e chopp artesanal.</p>
+        <span class="badge badge-primary">Exposição</span>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="cardapio" class="reveal">
-  <h2>Cardápio</h2>
-  <div class="menu-list">
-    <h4>Bebidas</h4>
-    <ul>
-      <li>Cervejas artesanais</li>
-      <li>Drinks autorais</li>
-      <li>Sucos naturais</li>
-    </ul>
+  <div class="container">
+    <h2>Nosso Cardápio</h2>
+    <p class="menu-intro text">Sabores selecionados para acompanhar sua experiência artística. Ingredientes locais e opções para todos.</p>
+    
+    <div class="menu-grid">
+      <div class="menu-category">
+        <h3>🍹 Drinks & Bebidas</h3>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Gin Tônica Autoral</span>
+            <span class="item-price">R$ 28</span>
+          </div>
+          <p class="item-desc">Gin artesanal, tônica premium, infusão de hibisco e especiarias da casa.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Cerveja IPA Artesanal</span>
+            <span class="item-price">R$ 18</span>
+          </div>
+          <p class="item-desc">Direto das microcervejarias locais, com notas cítricas e amargor marcante.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Suco da Estação</span>
+            <span class="item-price">R$ 12</span>
+          </div>
+          <p class="item-desc">Combinação refrescante de frutas sazonais prensadas na hora.</p>
+        </div>
+      </div>
 
-    <h4>Comidas</h4>
-    <ul>
-      <li>Sanduíches</li>
-      <li>Porções</li>
-      <li>Opções vegetarianas</li>
-    </ul>
+      <div class="menu-category">
+        <h3>🍔 Comidas & Porções</h3>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Burgão Alternativa</span>
+            <span class="item-price">R$ 34</span>
+          </div>
+          <p class="item-desc">Hambúrguer de costela blend da casa (150g), queijo derretido, maionese defumada no pão brioche.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Fritas Rústicas</span>
+            <span class="item-price">R$ 24</span>
+          </div>
+          <p class="item-desc">Batatas fritas artesanais cortadas à mão com casca, temperadas com páprica defumada e alecrim.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Sanduba Vegano de Cogumelos</span>
+            <span class="item-price">R$ 30</span>
+          </div>
+          <p class="item-desc">Mix de cogumelos salteados, rúcula fresca e pesto de castanhas na baguete artesanal.</p>
+        </div>
+      </div>
 
-    <h4>Mercearia</h4>
-    <ul>
-      <li>Produtos naturais</li>
-      <li>Itens alternativos</li>
-      <li>Arte independente</li>
-    </ul>
+      <div class="menu-category">
+        <h3>🛒 Mercearia & Arte</h3>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Ecobag Colecionável</span>
+            <span class="item-price">R$ 35</span>
+          </div>
+          <p class="item-desc">Sacola de algodão cru reforçado com estampas exclusivas de artistas parceiros.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Zines & Prints</span>
+            <span class="item-price">A partir de R$ 10</span>
+          </div>
+          <p class="item-desc">Produção editorial local, pôsteres e ilustrações numeradas assinadas pelos criadores.</p>
+        </div>
+        <div class="menu-item">
+          <div class="item-header">
+            <span class="item-name">Grão de Café Artesanal (250g)</span>
+            <span class="item-price">R$ 28</span>
+          </div>
+          <p class="item-desc">Pacote de café especial de pequenos produtores, torrado artesanalmente.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="galeria" class="reveal">
-  <h2>Galeria</h2>
-  <div class="gallery">
-    <div>Foto do espaço</div>
-    <div>Eventos</div>
-    <div>Arte</div>
-    <div>Performances</div>
-    <div>Bar</div>
-    <div>Convívio</div>
+  <div class="container">
+    <h2>Galeria de Fotos</h2>
+    <p class="gallery-intro text">Um vislumbre das experiências, arte e sabores que orbitam no nosso universo físico.</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/gallery_space.png" alt="Espaço interno aconchegante do Alternativa Bar">
+        <div class="gallery-overlay">
+          <span>O Espaço</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery_acrobatics.png" alt="Apresentação de tecido acrobático no Alternativa">
+        <div class="gallery-overlay">
+          <span>Acrobacias Aéreas</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery_music.png" alt="Música ao vivo e jam session acústica no bar">
+        <div class="gallery-overlay">
+          <span>Jam Sessions</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery_drinks.png" alt="Drinks autorais e cervejas artesanais servidos no balcão">
+        <div class="gallery-overlay">
+          <span>Drinks Autorais</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery_food.png" alt="Hambúrguer artesanal gourmet e fritas">
+        <div class="gallery-overlay">
+          <span>Comida de Verdade</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery_art.png" alt="Exposição de arte independente nas paredes de tijolo">
+        <div class="gallery-overlay">
+          <span>Exposições de Arte</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="videos reveal">
-  <h2>Vídeos</h2>
-  <iframe src="#"></iframe>
-</section>
-
 <section id="local" class="reveal">
-  <h2>Localização</h2>
-  <p class="text">
-    R. Bela Aurora, 215B – Campo Grande – Rio de Janeiro – RJ  
-    CEP 23088-200
-  </p>
-  <iframe
-    class="map"
-    src="https://www.google.com/maps?q=R.+Bela+Aurora,+215B,+Campo+Grande,+RJ&output=embed">
-  </iframe>
+  <div class="container">
+    <h2>Como Chegar</h2>
+    <div class="local-grid">
+      <div class="local-info">
+        <p class="text font-highlight">R. Bela Aurora, 215B</p>
+        <p class="text">Campo Grande · Rio de Janeiro – RJ</p>
+        <p class="text">CEP 23088-200</p>
+        <p class="text font-muted">Próximo ao centro de Campo Grande, em um ambiente reservado e acolhedor.</p>
+      </div>
+      <div class="local-map-wrapper">
+        <iframe
+          class="map"
+          title="Mapa de localização do Alternativa"
+          src="https://www.google.com/maps?q=R.+Bela+Aurora,+215B,+Campo+Grande,+RJ&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-  © Alternativa · Loja · Mercearia · Arte · Food · Bar  
+  <div class="container">
+    <p>© Alternativa · Loja, Mercearia, Arte, Food & Bar</p>
+    <p class="dev-tag">Feito com orgulho por Roberto Marins</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
