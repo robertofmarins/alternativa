@@ -215,6 +215,7 @@ nav {
   margin-bottom: 20px;
   background: linear-gradient(135deg, var(--text-main) 30%, var(--text-muted) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -555,11 +556,24 @@ footer p {
 }
 
 .dev-tag {
-  font-size: 0.85rem;
-  color: var(--accent-2);
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.4;
   margin-top: 12px;
+  transition: var(--transition);
+}
+
+.dev-tag a {
+  transition: var(--transition);
+}
+
+.dev-tag a:hover {
+  color: var(--text-main);
+  text-decoration: underline;
+}
+
+.dev-tag:hover {
+  opacity: 0.8;
 }
 
 /* REVEAL SCROLL ANIMATION */
